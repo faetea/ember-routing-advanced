@@ -2,7 +2,11 @@
 
 <ul>
 {{#each model as |order|}}
-  <li>{{order.purchaser}}, ${{order.totalCost}}</li>
+  <li>
+    {{#link-to 'order' order tagName='li'}}
+      {{order.purchaser}}, ${{order.totalCost}}
+    {{/link-to}}
+  </li>
 {{/each}}
 </ul>
 
