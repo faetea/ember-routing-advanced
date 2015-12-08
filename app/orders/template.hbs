@@ -1,0 +1,9 @@
+<h3> Product Orders </h3>
+
+<ul>
+{{#each model as |order|}}
+  <li>{{order.purchaser}}, ${{order.totalCost}}</li>
+{{/each}}
+</ul>
+
+{{!-- {{outlet}} --}}

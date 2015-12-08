@@ -13,6 +13,9 @@ Router.map(function() {
     this.route('engineering');
     this.route('sales');
   });
+  this.route('products');
+  this.route('product', {path: '/products/:product_id'});
+  this.route('orders');
 });
 
 export default Router;

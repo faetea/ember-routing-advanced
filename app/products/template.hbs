@@ -1,0 +1,13 @@
+<h3> Product Listings </h3>
+
+<ul>
+{{#each model as |product|}}
+  <li>
+    {{#link-to 'product' product tagName='li'}}
+      {{product.name}}, ${{product.price}}
+    {{/link-to}}
+  </li>
+{{/each}}
+</ul>
+
+{{!-- {{outlet}} --}}
